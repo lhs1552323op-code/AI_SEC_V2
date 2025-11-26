@@ -21,3 +21,43 @@
 1. 데이터 수집, 2.데이터 분석, 3. 데이터 전처리, 4. 순차 모델 구성, 5. 훈련결과시각화,
 6. 정확률 시각화, 7.정확율 수치화
 </pre>
+
+### 2. 프로젝트 : 다중선영회귀  (가상화폐 가격 예측 실전 분석)
+####    데이터 - 현재 시간의 가상화폐 데이터 200여개 추출 및 시계열 데이터 변환
+####    데이터 정의 
+<pre>
+time_step(간격)최고가
+time_step(간격)최저가
+time_step(간격)현재가
+</pre>
+
+
+####   개발킷
+<pre>
+개발언어 : python v3.9
+개발도구 : jupyter notebook, pycharm GUI
+주요라이브러리 : tensorflow v2.10.1, scikit-learn v1.6.1, 	keras v2.10.0, 
+	            numpy v1.26.4 matplotlib v3.9.3, tensorflow v2.10.1, scikit-learn v1.6.1
+</pre>
+
+
+#### Package Struct
+<pre>
+프로젝트명 : Crypto_Coin_Service_03
+루트디렉토리 : ai_service, static, templates
+루트파일명 : Web_Service_AI.py (웹 라우팅)
+  디렉토릐 구조
+     ai_service
+       - coin_config
+         저장된 모델과 에러율 및 스케일러
+       - Crypto_Coin_Predict.py (모델 예측 관련 서비스)
+       - Crypto_Coin_Service.py (미들웨어서버와 연동되는 서비스)
+       - Crypto_Coin_Train.py (데이터 전처리와 모델 생성 및 훈련 저장)
+      static
+         - chart (훈련 결과 그래프 저장)
+         - css (client service 화면 서식)
+         - js (client service 화면 컨트롤러)
+         - img (client service 요구 이미지)
+      templates
+         - html (client service 화면 구조)
+</pre>
